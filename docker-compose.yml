@@ -1,0 +1,8 @@
+mirror-cache:
+  image: nginx
+  volumes:
+   - ./mirror.conf:/etc/nginx/conf.d/default.conf
+   - 'mirror-cache:/var/cache/nginx/mirror'
+  ports:
+   - "80:80"
+  command: /bin/bash -c "nginx -g 'daemon off;'"
