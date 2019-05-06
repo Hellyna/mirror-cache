@@ -7,3 +7,5 @@ Currently, the related nginx configuration (`mirror.conf`) contains ros, ros2, a
 # Usage
 
 `docker-compose up`
+
+Then, edit the relevant files in `/etc/apt/sources.list` or `/etc/apt/sources.list.d/*` to refer to the new mirror using your private IP address. (ie, something like `http://192.168.x.x/ubuntu`).
