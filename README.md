@@ -1,8 +1,9 @@
 # mirror-cache
 
-Preliminary poc of an nginx caching based apt mirror. Still in progress of
-testing. Feedback welcome.
+Preliminary poc of an nginx caching based apt mirror. Feedback welcome.
 
-## Usage
+Currently, the related nginx configuration (`mirror.conf`) contains ros, ros2, and gazebo mirrors to test the capabilities of multi mirror path setups.
+
+# Usage
 
 `docker-compose up`
